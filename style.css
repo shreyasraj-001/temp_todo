@@ -12,32 +12,31 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    /* background-color: #24262b; */
     
 }
 
 body{
     font-family: sans-serif;
-    /* background-color: #24262b; */
+    background-color: #d8d8d8 !important;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    
 }
-
+.block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 .app{
     width: 300px;
     height: 500px;
     border: 4px solid var(--light-dark);
-    /* background-color: #24262b; */
+    background-color: #fff;
     border-radius: 8px;
     padding: 14px;
     overflow-y: scroll;
     border-radius: 18px;
-    justify-content: center;
-    align-items: center;
+
     /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
 
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
@@ -95,20 +94,15 @@ body{
     color: red;
 }
 
-/* 
 
 .container{
-  max-width: 420px;
-  /* margin:auto; */
-  background-color: ;
-  bottom: 0;
-
+  max-width: 1170px;
+  margin:auto;
 }
 .row{
-    display: flex;
-    flex-wrap: wrap;
-    /* width: 100%; */
-  }
+  display: flex;
+  flex-wrap: wrap;
+}
 
 ul{
   list-style: none;
@@ -117,10 +111,13 @@ ul{
   background-color: #24262b;
     padding: 70px 0;
 }
+
 .footer-col{
-   width: 25%;
-   padding: 0 15px;
+  width: 25%;
+  padding: 0 15px;
 }
+
+
 .footer-col h4{
   font-size: 18px;
   color: #ffffff;
@@ -129,6 +126,8 @@ ul{
   font-weight: 500;
   position: relative;
 }
+
+
 .footer-col h4::before{
   content: '';
   position: absolute;
@@ -137,11 +136,14 @@ ul{
   background-color: #e91e63;
   height: 2px;
   box-sizing: border-box;
-  width: 50px;
+  width: 60px;
 }
+
 .footer-col ul li:not(:last-child){
-  margin-bottom: 10px;
+  margin-bottom: 100px;
 }
+
+
 .footer-col ul li a{
   font-size: 16px;
   text-transform: capitalize;
@@ -177,11 +179,11 @@ ul{
 @media(max-width: 767px){
   .footer-col{
     width: 50%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 }
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
 }
-} */
+}
