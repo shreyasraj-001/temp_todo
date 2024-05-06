@@ -26,22 +26,21 @@ let formValidation= () => {
     }
 }
 
-let data =[];
+let data =[{}];
 
 let acceptData=() => {
     data.push({
         text: textInput.value,
-        date:dateInput.value,
-        description:textarea.value,  
+        date: dateInput.value,
+        description: textarea.value,  
     })
     localStorage.setItem("data", JSON.stringify(data));
-    // localStorage.getItem
     console.log(data);
     createTasks();
 };
 
 let createTasks=() =>{
-    tasks.innerHTML ="";
+    tasks.innerHTML = "";
 
     data.map((x,y)=>{
         return     (tasks.innerHTML += `
@@ -59,7 +58,7 @@ let createTasks=() =>{
     })
 
 resetForm();
-}
+};
 
 let deleteTask=(e)=>{
     e.parentElement.parentElement.remove();
@@ -76,8 +75,7 @@ let editTask= (e)=>{
     dateInput.value = selectTask.children[1].innerHTML;
     textarea.value =  selectTask.children[2].innerHTML;
 
-    deleteTask.remove();
-
+    deleteTask(e);
 }
 
 let resetForm = ()=>{
